@@ -1,0 +1,130 @@
+body{ height:100%;padding: 0%;margin: 0%;}
+.grid-container{
+    height:100vh;
+    width:100%;
+    z-index:1;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+#my_canvas{
+    position: relative !important;
+    box-sizing: border-box;
+    border: lightgrey 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
+}
+.instructions_panel{
+    z-index:20;
+    position: absolute;
+    top:20px;
+    left:20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:inherit;
+    padding:20px;
+    border-radius: 20px;
+}
+.controls_panel{
+    z-index:20;
+    position: absolute;
+    bottom:0%;
+    width:300px;
+    margin: auto;
+    color:white;
+    margin-left:0px;
+    padding:20px;
+    padding-top:0px;
+    padding-bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border:1px solid black;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    overflow: hidden;
+}
+
+.controls_panel .btn{
+    padding:5px !important;
+}
+.algo_info{
+    z-index: 20;
+    position: absolute;
+    width:90%;
+    top:5%;
+    left:5%;
+    height:90%;
+    background-repeat: no-repeat;
+    overflow:scroll;
+}
+.algo_info .block{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: 100% 100%;
+    min-height:700px;
+    min-width:1000px;
+}
+
+.see_code{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.see_code:hover{
+    background-color: white;
+    color: black;
+}
+.post_search_info{
+    position: absolute;
+    bottom:50px;
+    right:50px;
+    padding:5px;
+    background-color: white;
+    border-radius: 12px;
+    width:150px;
+    color:green;
+}
+.controls_panel_con{
+    height:auto;
+    max-height: 0px;
+}
+.select_algo, .hide_n_seek{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.hide_n_seek{padding-bottom:0px;}
+.bfs_search{margin-top: 10px;}
+.bfs_search,.astar_search, .dijkstra_search{
+    padding:5px;
+    padding-left:20px;
+    margin-bottom:3px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    cursor:pointer; 
+}
+
+.bfs_search_opts,.astar_search_opts,.astar_search_heu, .dijkstra_search_opts{
+    padding-left:30px;
+    font-size: 14px;
+    margin-top:5px;
+    padding-bottom: 10px;
+}
+.bfs_options_title, .astar_options_title, .dijkstra_options_title,  .astar_heuristic_title{
+    padding-left:15px;
+}
+
+.graphDiv{
+
+    display: none;
+    border: 2px solid green;
+    justify-content: space-around;
+    height: 500px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 32px;
+}
